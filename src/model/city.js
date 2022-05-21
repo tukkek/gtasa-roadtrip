@@ -1,6 +1,6 @@
 import * as rpg from '../controller/rpg.js'
 
-export class Landmark{
+class Landmark{
   constructor(name,x,y){
     this.name=name
     this.x=x//reference: 
@@ -14,7 +14,7 @@ export class Landmark{
   }
 }
 
-class District{
+export class District{
   constructor(name){
     this.name=name
     this.landmarks=[]
@@ -23,7 +23,7 @@ class District{
   visit(name,x,y){this.landmarks.push(new Landmark(name,x,y))}
 }
 
-class City{
+export class City{
   constructor(name,x,y){
     this.name=name
     this.x=x//TODO temp

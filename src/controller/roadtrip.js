@@ -1,11 +1,15 @@
 import * as city from '../model/city.js'
 import * as rpg from './rpg.js'
 import * as home from '../view/home.js'
+import * as county from '../model/county.js'
 
 const LOCATIONS=document.querySelector('#locations ol')
 const DESTINATIONS=9
 
-export var areas=[[city.ls,city.lv,city.sf]]
+export var areas=[
+  [city.ls,city.lv,city.sf],
+  [county.red,county.flint,county.whetstone,county.tierrarobada,county.bone]
+]
 
 var destinations=new Set()
 

@@ -11,14 +11,15 @@ function change(){
 }
 
 export function setup(){
-  let areas=roadtrip.areas.flatMap(a=>a)
-  home=areas[0]
+  let areas=roadtrip.areas.flatMap(a=>a).sort((a,b)=>a.name.localeCompare(b.name))
+  home=areas[4-1]
   for(var a of areas){
     var n=a.name
     LOCATIONS.set(n,a)
     let o=document.createElement('option')
     o.value=n;
     o.innerHTML=n;
+    if(a==home) o.selected=true
     HOME.appendChild(o)
   }
   HOME.onchange=change

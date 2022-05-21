@@ -1,0 +1,15 @@
+<title>GTA: San Andres roadtrip generator</title>
+<link href='style.css' rel='stylesheet'>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<div id='home'>Start from <select></select></div>
+<div id='locations'>
+  <strong>Stops:</strong>
+  <ol></ol>
+</div>
+<script type='module'>
+  import * as roadtrip from './src/controller/roadtrip.js'
+  import * as home from './src/view/home.js'
+  home.setup()
+  roadtrip.setup()
+</script>

@@ -3,6 +3,7 @@
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width,initial-scale=1'>
 <div id='home'>Start at <select></select>.</div>
+<div id='vehicle'><a href='https://gta.fandom.com/wiki/Vehicles_in_GTA_San_Andreas' target='_blank'>Vehicle</a>: <span></span>.</div>
 <div id='locations'>
   <strong>Stops:</strong>
   <ol></ol>
@@ -11,6 +12,8 @@
 <script type='module'>
   import * as roadtrip from './src/controller/roadtrip.js'
   import * as home from './src/view/home.js'
+  import * as vehicle from './src/model/vehicle.js'
   home.setup()
   roadtrip.setup()
+  vehicle.setup()
 </script>
